@@ -1,0 +1,353 @@
+*{
+    box-sizing: border-box;
+    transition: .2s ease;
+}
+
+:root {
+    amarillo: #EAC926;
+    azul: #03264C;
+    celeste: #1259c3;
+    gris-oscuro: #666;
+    gris-claro: #ebebeb;
+    verde: #39b54a;
+}
+
+body{
+    font-family:'Roboto', sans-serif;
+    background-color: #ebebeb;/**/
+}
+
+header{
+    background-color: #EAC926;
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 5px;
+}
+main{
+    background-color: #ebebeb;
+    width: 90%;/**/
+    margin: auto;
+}
+
+/*targetas de los productos*/
+
+/*Contenedor padre*/
+
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.card{
+    background-color: white;
+    margin:auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.productos-card-img{
+    width: 100%;
+}
+
+.productos-card-desc{ 
+    padding-top: 10px;
+    border-top: solid 1px #ebebeb;
+    padding-left: 10px;
+}
+#camion{
+    color: #39b54a;
+    border:solid 1px #39b54a;
+    font-size: 1.5em;
+    max-width:fit-content;
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 75%;
+}
+
+
+.cuerpos-texto {
+    font-size: 12px;
+}
+
+.centrar-uno{
+    text-align: center;
+}
+
+
+.titular{
+    font-size: 24px;
+    font-weight:bolder;
+    color: #666;
+    text-align: center;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+.descuentos {
+    font-size: 16px;
+    color:#39b54a
+}
+
+.descripciones{
+    font-size: 16px;
+    display: none;
+}
+
+.negrilla{
+    font-weight: bold ;
+    font-size: 18px;
+}
+
+footer div{
+    text-align: center;
+}
+
+.iconos{
+    color: #1259c3;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.decoracion{
+    list-style: none;
+    display: flex;
+}
+
+div ul li a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.ocultar {
+    display: none;
+    margin-left: 50px;
+}
+
+/*contenedor padre nav*/
+.contenedor-nav-bar{
+    display: flex;
+    width: 100%;
+}
+.contenedor-info{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    
+}
+
+.contenedor-personal{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+div div.contenedor-info ul li{
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+div div.contenedor-personal ul li{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div div.contenedor-personal ul li i{
+    
+    margin-left: 15px;
+}
+
+/*contenedor buscador*/
+.buscador{
+    background-color: white;
+    color: #666;
+    font-size: 14px;
+    border: solid 1px black;
+    max-width:fit-content;
+    width: 80%;
+    height: 30px;
+    border-radius: 5px;
+    
+
+}
+div div p{
+    margin:auto;
+    margin-top: 6px;
+}
+/*contendor padre*/
+.contenedor-h{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 70%;
+}
+header div img{
+    width: 100%;
+    
+}
+
+.contenedor-lupa{
+    display: flex;
+    width: 50%;
+    align-self: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    
+}
+/*contenedor lupa*/
+
+div div#lupita{
+    background-color: white;
+    color: black;
+    border: solid 1px black; 
+    max-width:fit-content;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+
+/*contenedor padre burger menu*/
+.burger{
+    text-align: center;
+    padding: 10px;
+}
+
+#menu{
+    background-color: #1259c3;
+    color: white;
+    font-size: 2em;
+    padding: 10px;  
+    border-radius: 5px;
+}
+
+.img{
+    width: 100%;
+}
+
+.contenedor-footer{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.copy{
+    text-align: center;
+}
+
+/*REGISTER*/
+    form{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 20px;
+        border: #ebebeb;
+        padding: 10px;
+
+    }
+
+    label{
+        font-weight: bold;
+    }
+    
+    .contenido{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500%;
+    }
+
+    main form a button{
+        width: 100%;
+        color:#ebebeb;
+        background-color: #1259c3;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    .borrar{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500%;
+        color:#ebebeb;
+        background-color: #1259c3;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    span{
+        color: red;
+    }
+
+/*Tablet*/
+@media (min-width:768px){
+
+    .descripciones{
+        display: block;
+    }
+    .card{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .ocultar{
+        display: block;
+    }
+    
+    .buscador{
+        margin-right: 5px;
+        padding-right: 20px;
+        width: 90%;
+        
+    }
+
+    .contenedor-f{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        flex-grow: 1;
+        padding-top: 2px;
+    }    
+
+    .burger{
+        display: none;
+    }
+    .card{
+        width: 37%;
+    }
+    .contenedor-footer{
+        flex-direction: row;
+    }
+    form{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        padding: 10px;
+    }
+}
+
+
+/*Destop*/
+@media (min-width:1200px) {
+    .card{
+        width: 20%;
+    }
+    .ocultar{
+        margin-left: 110px;
+    }
+    .buscador{
+        margin-right: 5px;
+        padding-right: 60px;
+        width: 90%;
+        margin-left: 40px;
+    }
+
+}

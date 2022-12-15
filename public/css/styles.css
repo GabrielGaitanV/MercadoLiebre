@@ -327,6 +327,7 @@ div div#lupita{
     }
     .contenedor-footer{
         flex-direction: row;
+        justify-content: space-around;
     }
     form{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -349,5 +350,5 @@ div div#lupita{
         width: 90%;
         margin-left: 40px;
     }
-
+    
 }

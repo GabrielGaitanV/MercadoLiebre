@@ -15,6 +15,7 @@
 body{
     font-family:'Roboto', sans-serif;
     background-color: #ebebeb;/**/
+    margin: 0;
 }
 
 header{
@@ -27,8 +28,13 @@ main{
     background-color: #ebebeb;
     width: 90%;/**/
     margin: auto;
+    padding-bottom: 10px;
 }
 
+footer{
+    background-color: white;
+    padding-top: 12px;
+}
 /*targetas de los productos*/
 
 /*Contenedor padre*/

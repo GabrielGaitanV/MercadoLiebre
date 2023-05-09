@@ -53,17 +53,27 @@ footer{
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 10px;
+    padding-top: 15px;
 }
+
+.card:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
 .productos-card-img{
     width: 100%;
 }
 
 .productos-card-desc{ 
-    padding-top: 10px;
-    border-top: solid 1px #ebebeb;
+    display: block;
+    border-top: solid 2px #ebebeb;
     padding-left: 10px;
 }
+
 #camion{
+    position: relative;
+    bottom: 27px;
+    background-color: #fff;
     color: #39b54a;
     border:solid 1px #39b54a;
     font-size: 1.5em;
@@ -71,6 +81,11 @@ footer{
     padding: 10px;
     border-radius: 50%;
     margin-left: 75%;
+    transition: all 1s ease;
+}
+
+#camion:hover{
+    transform: rotate(-90deg);
 }
 
 
@@ -96,12 +111,14 @@ footer{
 
 .descuentos {
     font-size: 16px;
-    color:#39b54a
+    color:#39b54a;
+    position: relative;
+    right: -40%;
+    bottom: 25px;
 }
 
 .descripciones{
     font-size: 16px;
-    display: none;
 }
 
 .negrilla{
@@ -117,6 +134,11 @@ footer div{
     color: #1259c3;
     font-size: 2em;
     margin-bottom: 10px;
+    transition: all 0.15s ease;
+}
+
+.iconos:hover{
+    color: #EAC926;
 }
 
 .decoracion{
@@ -297,13 +319,6 @@ div div#lupita{
 
 /*Tablet*/
 @media (min-width:768px){
-
-    .descripciones{
-        display: block;
-    }
-    .card{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-    }
 
     .ocultar{
         display: block;
